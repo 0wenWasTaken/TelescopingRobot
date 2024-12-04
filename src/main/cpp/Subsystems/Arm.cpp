@@ -19,7 +19,7 @@ void Arm::Periodic() {
 }
 
 // Takes PosValue, goal position, and acceptable range, to determine if your position is within the acceptable range
-bool Arm::Is_Done(units::angle::turn_t goal) {
+bool Arm::is_done(units::angle::turn_t goal) {
     return CONSTANTS::IN_THRESHOLD<units::turn_t>(m_motor.GetPosition().GetValue(), goal, 0.01_tr);
 }
 

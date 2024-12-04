@@ -13,7 +13,7 @@ class Shoulder: public frc2::SubsystemBase {
         Shoulder();
 
         void Periodic() override;
-        bool Is_Done(units::angle::turn_t goal);
+        bool is_done(units::angle::turn_t goal);
         
         frc2::CommandPtr Move_Command(units::angle::turn_t goal);
         frc2::CommandPtr Idle();

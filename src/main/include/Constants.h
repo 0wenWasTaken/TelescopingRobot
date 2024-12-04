@@ -47,4 +47,9 @@ namespace CONSTANTS {
         constexpr double INTAKE_THROTTLE     = 0.2;
         constexpr double EJECT_THROTTLE      = -0.4;
     }
+
+    enum Grabber 
+    {
+        NONE, INTAKE, EJECT
+    };
 }
